@@ -19,7 +19,7 @@
 
 .acme{
 	padding-top: 60px;
-	padding-bottom: 60px;
+
 	text-align: center;
 	font-family: 'Acme';
 	font-size: 80px;
@@ -32,18 +32,30 @@
 	padding-left: 50px;
 	font-type: bold;
 	color: black;
+
+}
+
+.faminfo{
+	background-color:#1E90FF;
+	color:gray;
+	padding-left: 80px;
+	padding-top: 80px;
+	font-type: bold;
+	padding-bottom: 80px;
+	text-decoration;
+	line-height: 1;
 }
 
 .perinfo{
-	background-color:#DCDCDC;
+	background-color:#FFFAF0;
 	color:gray;
 	padding-left: 80px;
-	padding-top: 55px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	font-type: bold;
-	padding-bottom: 55px;
-	curson: not-allowed;
 	text-decoration;
-	line-height: 0.5;
+	line-height: 1;
+	
 }
 
 .perinfo2	{
@@ -57,6 +69,13 @@
 	text-decoration;
 	line-height: 0.5;
 }
+.family{
+	font-family: 'Acme';
+	font-size: 20px;
+	padding-left: 50px;
+	color: white;
+}
+
 
 
 .resume{
@@ -64,6 +83,18 @@
 	font-size: 20px;
 	padding-left: 50px;
 	color: black;
+}
+
+.im{
+	font-family: 'Acme';
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.perpic{
+	height: 400px;
+	width: 600px;
 }
 
 </style>
@@ -115,14 +146,15 @@
 </div>
 
 <div class="container-fluid">
-	<h1 class="acme"> ROBERT INCORPORATED </h1>
-	<h2 
+	<p class="acme"> ROBERT INCORPORATED </p>
+	<p class="im"> I'm an aspiring web designer and developer, who creates website between coding and design. For more details please see my profile below. Thankyou!
+	</p>
 </div>
 <div class="container-fluid">
 <div class="perinfo">
 	<div class="row">
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 background-danger	">
-	<p class="acme2">Personal Information</p></br>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	<p class="acme2">PERSONAL INFORMATION</p></br>
 	<p class="resume">Name: Robert Arroyo</p></br>
 	<p class="resume">Location: Montalban, Rizal</p></br>
 	<p class="resume">Contact Number: 09774545597</p></br>
@@ -134,18 +166,31 @@
 	</div>
 
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 background-danger	">
-
+		<img src="personalinfo.jpeg" class="perpic" >
 	</div>
+</div>
 </div>
 </div>
 
 <div class="container-fluid">
-
+	<div class="faminfo">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<img src="personalinfo.jpeg" class="perpic">
+		</div>
+			
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<p class="family">OTHER BACKGROUND</p></br>
+			<p class="family">Father's Name: Roel Felizarta</p></br>
+			<p class="family">Father's Occupation: Chief Cook</p></br>
+			<p class="family">Mother's Name: Hilda Felizarta</p></br>
+			<p class="family">Mother's Occupation: Housewife</p></br>
+			<p class="family">Religion: Catholic</p></br>
+			<p class="family">Civil Status: Single</p></br>
+	</div>
 </div>
-
-
-
-
+</div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
