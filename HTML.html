@@ -35,6 +35,15 @@
 
 }
 
+.acme3{
+	font-family: 'Acme';
+	font-size: 25px;
+	padding-left: 50px;
+	font-type: bold;
+	color: white;
+
+	}
+
 .faminfo{
 	background-color:#1E90FF;
 	color:gray;
@@ -44,6 +53,16 @@
 	padding-bottom: 80px;
 	text-decoration;
 	line-height: 1;
+}
+.about{
+	background-color:gray;
+	padding-left: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-type: bold;
+	text-decoration;
+	line-height: 1;
+	
 }
 
 .perinfo{
@@ -57,6 +76,18 @@
 	line-height: 1;
 	
 }
+.skillsinfo{
+	background-color:gray;
+	color:gray;
+	padding-left: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-type: bold;
+	text-decoration;
+	line-height: 1;
+	
+}
+
 
 .perinfo2	{
 	background-color: gray;
@@ -75,6 +106,20 @@
 	padding-left: 50px;
 	color: white;
 }
+.abouttext{
+	font-family: 'Acme';
+	font-size: 25px;
+	padding-left: 50px;
+	color: white;
+	padding-top: 150px;
+}
+.skills{
+	font-family: 'Acme';
+	font-size: 20px;
+	padding-left: 50px;
+	color: white;
+}
+
 
 
 
@@ -96,32 +141,31 @@
 	height: 400px;
 	width: 600px;
 }
-
+.skillpic{
+	height: 200px;
+	width: 600px;
+}
+.mappic{
+	height: 400px;
+	width: 600px;
+	padding-left: 0px;
+}
 </style>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
-		<div class="navbar-header">
+		<div class="navbar-header"">
 			<a class="navbar-brand" href="#">Robert Incorporated</a>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
-			<li class="active"><a href"#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-			<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages
-				<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Page 1</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-				</ul>
-			</li>
-		</ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+					</ul>
 	</div>
 </nav>
 <div class="container-fluid">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div id="myCarousel" class="carousel" data-ride="carousel">
 	
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -139,14 +183,14 @@
 			</div>
 
 			<div class="item">
-				<img src="material3.png" alt="mat3" style="width:100%;">
+				<img src="material3.jpg" alt="mat3" style="width:100%;">
 			</div>
 		</div>	
 	</div>
 </div>
 
 <div class="container-fluid">
-	<p class="acme"> ROBERT INCORPORATED </p>
+	<p class="acme" id="About"> ROBERT INCORPORATED </p>
 	<p class="im"> I'm an aspiring web designer and developer, who creates website between coding and design. For more details please see my profile below. Thankyou!
 	</p>
 </div>
@@ -176,11 +220,11 @@
 	<div class="faminfo">
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<img src="personalinfo.jpeg" class="perpic">
+			<img src="skill.jpg" class="perpic">
 		</div>
 			
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<p class="family">OTHER BACKGROUND</p></br>
+			<p class="family">BIOGRAPHY</p></br>
 			<p class="family">Father's Name: Roel Felizarta</p></br>
 			<p class="family">Father's Occupation: Chief Cook</p></br>
 			<p class="family">Mother's Name: Hilda Felizarta</p></br>
@@ -190,6 +234,36 @@
 	</div>
 </div>
 </div>
+</div>
+
+<div class="container-fluid">
+	<div class="perinfo">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<p class="acme2">SKILLS</p></br>
+			<p class="resume">Other Skills: Hardware Troubleshooting, Software Troubleshooting and Network Troubleshooting</p></br>
+			<p class="resume">Skills: HTML, CSS, HTML5, Bootstrap,Web design, Photoshop, Visual Basic 6.0, C Language Programming, C# Programming, C++ Programming and SQL.</br>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<img src="otherinfo.jpeg" class="skillpic">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="contact">
+	<div class="about">
+		<div class="row">
+		<div class="ocl-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<p class="abouttext">CONTACT US: 09774545597</p>
+		<a href="#" class="btn btn-lg btn-primary" role="button" style="margin-left:45px;">Facebook</a>
+		<a href="#" class="btn btn-lg btn-danger" role="button">GMAIL</a>
+		<a href="#" class="btn btn-lg btn-primary" role="button">Twitter</a>
+		</div>
+	
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<img src="map.jpg" class="mappic">
+	</div>
 </div>
 
 
